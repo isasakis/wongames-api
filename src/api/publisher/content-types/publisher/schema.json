@@ -20,6 +20,12 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "game": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::game.game",
+      "inversedBy": "publishers"
     }
   }
 }
